@@ -161,6 +161,7 @@ extern af_packet_main_t af_packet_main;
 extern vnet_device_class_t af_packet_device_class;
 extern vlib_node_registration_t af_packet_input_node;
 
+int af_packet_create_if_simple (u8 *host_if_name, u32 *sw_if_index);
 int af_packet_create_if (af_packet_create_if_arg_t *arg);
 int af_packet_delete_if (u8 *host_if_name);
 int af_packet_set_l4_cksum_offload (u32 sw_if_index, u8 set);

@@ -230,7 +230,7 @@ VLIB_INIT_FUNCTION (lcp_api_init);
 VLIB_PLUGIN_REGISTER () = {
   .version = VPP_BUILD_VER,
   .description = "Linux Control Plane - Interface Mirror",
-  .default_disabled = 1,
+  .default_disabled = 0,
 };
 
 /*

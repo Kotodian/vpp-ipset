@@ -16,6 +16,8 @@
 #ifndef included_vnet_device_netlink_h
 #define included_vnet_device_netlink_h
 
+clib_error_t *vnet_netlink_add_link (char *ifname, char *iftype);
+clib_error_t *vnet_netlink_del_link (char *ifname);
 clib_error_t *vnet_netlink_set_link_name (int ifindex, char *new_ifname);
 clib_error_t *vnet_netlink_set_link_netns (int ifindex, int netns_fd,
 					   char *new_ifname);
